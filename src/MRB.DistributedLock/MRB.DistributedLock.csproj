@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>MRB Distributed Lock Library</Title>
+	<VersionPrefix>0.7.1</VersionPrefix>
+    <PackageReleaseNotes>0.7.1 - Exposed constructor for LockToken
+0.7.0 - Added TTL to tokens
+0.6.0 - Added configurable lock table name
+0.5.0 - Changes from stress testing
+0.4.0 - Added WaitForLock
+0.3.0 - Fixed tests
+0.2.0 - Added abstractions
+0.1.0 - Initial Version</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/moadib2k/DistributedLockRepository</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.13.21" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.5.18" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+  </ItemGroup>
+
+</Project>
